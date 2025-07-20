@@ -22,7 +22,7 @@
     "build:electron": "export NODE_ENV=production; export BUILD_ENV=electron; pnpm run webpack:extension && pnpm run webpack:electron",
     "build:extension:chrome": "export NODE_ENV=production; export BUILD_ENV=extension; export TARGET_BROWSER=chrome; pnpm run webpack:extension",
     "build:extension:firefox": "export NODE_ENV=production; export BUILD_ENV=extension; export TARGET_BROWSER=firefox; pnpm run webpack:extension",
-    "bundle": "cd dist/extension && bestzip ../../extension.zip *",
+    "bundle": "cd dist/extension/firefox && bestzip ../../../firefox-extension.zip * && cd ../chrome && bestzip ../../../chrome-extension.zip *",
     "cosmos": "export BUILD_ENV=electron; cosmos",
     "cosmos:build": "export BUILD_ENV=electron; pnpm run cosmos-export && node scripts/cosmos-add-badge.js",
     "dev": "concurrently \"npm:dev:extension\" \"npm:dev:electron\"",
