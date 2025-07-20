@@ -8,6 +8,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const root = `${__dirname}/..`;
 
 const isExtension = process.env.BUILD_ENV !== "electron";
+const targetBrowser = process.env.TARGET_BROWSER || "chrome";
 
 const inOutConfig = isExtension
   ? {
@@ -19,7 +20,7 @@ const inOutConfig = isExtension
         panel: `${root}/src/panel/panel.tsx`,
       },
       output: {
-        path: `${root}/dist/extension`,
+        path: `${root}/dist/extension/${targetBrowser}`,
         devtoolModuleFilenameTemplate: (info) =>
           `urql-devtools:///${info.resourcePath}`,
       },
@@ -96,7 +97,11 @@ module.exports = {
       patterns: [
         { from: "src/assets/", to: "assets/" },
         isExtension && {
-          from: "src/extension/manifest.json",
+          from:
+            targetBrowser === "chrome"
+              ? "src/extension/chrome_manifest.json"
+              : "src/extension/firefox_manifest.json",
+          to: "manifest.json",
           transform: function (content) {
             return Buffer.from(
               JSON.stringify(

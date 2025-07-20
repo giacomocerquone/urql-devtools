@@ -13,7 +13,7 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': ^6.2.1
   '@fortawesome/free-solid-svg-icons': ^6.2.1
   '@fortawesome/react-fontawesome': ^0.2.0
-  '@types/chrome': 0.0.122
+  '@types/chrome': 0.1.1
   '@types/codemirror': 0.0.97
   '@types/d3-scale': ^2.2.0
   '@types/enzyme': ^3.10.5
@@ -125,7 +125,7 @@ devDependencies:
   '@babel/preset-typescript': 7.18.6_@babel+core@7.20.2
   '@changesets/cli': 2.26.0
   '@changesets/get-github-info': 0.5.2
-  '@types/chrome': 0.0.122
+  '@types/chrome': 0.1.1
   '@types/codemirror': 0.0.97
   '@types/d3-scale': 2.2.0
   '@types/enzyme': 3.10.5
@@ -1909,7 +1909,7 @@ packages:
     dependencies:
       '@jest/types': 29.4.2
       '@types/node': 14.17.4
-      chalk: 4.1.0
+      chalk: 4.1.2
       jest-message-util: 29.4.2
       jest-util: 29.4.2
       slash: 3.0.0
@@ -2044,7 +2044,7 @@ packages:
       '@jest/types': 29.4.2
       '@jridgewell/trace-mapping': 0.3.17
       '@types/node': 14.17.4
-      chalk: 4.1.0
+      chalk: 4.1.2
       collect-v8-coverage: 1.0.1
       exit: 0.1.2
       glob: 7.1.6
@@ -2352,8 +2352,8 @@ packages:
       '@types/node': 14.17.4
     dev: true
 
-  /@types/chrome/0.0.122:
-    resolution: {integrity: sha512-xHmT1AlBwKAVpQmv+/5gUsB1FXLUiizIZI6bIM52DJDtEhv97FkryHkohjw2HZqAGLOxuJ3kae7YfgWIZ+hMrg==}
+  /@types/chrome/0.1.1:
+    resolution: {integrity: sha512-MLtFW++/n+OPQIaf5hA6pmURd3Zn+OxuvASyf2mYh8B8pHDpbhHjwlVHMw3H/aJC9Z7Z3itO0AFaZeegrGk0yA==}
     dependencies:
       '@types/filesystem': 0.0.29
       '@types/har-format': 1.2.4
@@ -4111,7 +4111,7 @@ packages:
       minipass-pipeline: 1.2.3
       mkdirp: 1.0.4
       p-map: 4.0.0
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 3.0.2
       ssri: 8.0.0
       tar: 6.1.6
@@ -4246,7 +4246,6 @@ packages:
     dependencies:
       ansi-styles: 4.2.1
       supports-color: 7.1.0
-    dev: true
 
   /char-regex/1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
@@ -6685,7 +6684,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
@@ -7527,6 +7526,7 @@ packages:
   /is-accessor-descriptor/1.0.0:
     resolution: {integrity: sha512-m5hnHTkcVsPfqx3AKlyttIPb7J+XykHvJP2B9bZDjlhLIoEq4XoK64Vg7boZlVWYK6LUY94dYPEE7Lh0ZkZKcQ==}
     engines: {node: '>=0.10.0'}
+    deprecated: Please upgrade to v1.0.1
     requiresBuild: true
     dependencies:
       kind-of: 6.0.3
@@ -7608,6 +7608,7 @@ packages:
   /is-data-descriptor/1.0.0:
     resolution: {integrity: sha512-jbRXy1FmtAoCjQkVmIVYwuuqDFUbaOeDjmed1tOGPrsMhtJA4rD9tkgA0F1qJ3gRFRXcHYVkdeaP50Q5rE/jLQ==}
     engines: {node: '>=0.10.0'}
+    deprecated: Please upgrade to v1.0.1
     requiresBuild: true
     dependencies:
       kind-of: 6.0.3
@@ -8047,7 +8048,7 @@ packages:
       '@jest/test-sequencer': 29.4.2
       '@jest/types': 29.4.2
       babel-jest: 29.4.2_@babel+core@7.20.2
-      chalk: 4.1.0
+      chalk: 4.1.2
       ci-info: 3.8.0
       deepmerge: 4.2.2
       glob: 7.1.6
@@ -8086,7 +8087,7 @@ packages:
       '@jest/types': 29.4.2
       '@types/node': 14.17.4
       babel-jest: 29.4.2_@babel+core@7.20.2
-      chalk: 4.1.0
+      chalk: 4.1.2
       ci-info: 3.8.0
       deepmerge: 4.2.2
       glob: 7.1.6
@@ -8112,7 +8113,7 @@ packages:
     resolution: {integrity: sha512-EK8DSajVtnjx9sa1BkjZq3mqChm2Cd8rIzdXkQMA8e0wuXq53ypz6s5o5V8HRZkoEt2ywJ3eeNWFKWeYr8HK4g==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      chalk: 4.1.0
+      chalk: 4.1.2
       diff-sequences: 29.4.2
       jest-get-type: 29.4.2
       pretty-format: 29.4.2
@@ -8219,7 +8220,7 @@ packages:
     resolution: {integrity: sha512-EZaAQy2je6Uqkrm6frnxBIdaWtSYFoR8SVb2sNLAtldswlR/29JAgx+hy67llT3+hXBaLB0zAm5UfeqerioZyg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      chalk: 4.1.0
+      chalk: 4.1.2
       jest-diff: 29.4.2
       jest-get-type: 29.4.2
       pretty-format: 29.4.2
@@ -8232,7 +8233,7 @@ packages:
       '@babel/code-frame': 7.18.6
       '@jest/types': 26.3.0
       '@types/stack-utils': 1.0.1
-      chalk: 4.1.0
+      chalk: 4.1.2
       graceful-fs: 4.2.10
       micromatch: 4.0.5
       slash: 3.0.0
@@ -8246,7 +8247,7 @@ packages:
       '@babel/code-frame': 7.18.6
       '@jest/types': 29.4.2
       '@types/stack-utils': 2.0.1
-      chalk: 4.1.0
+      chalk: 4.1.2
       graceful-fs: 4.2.10
       micromatch: 4.0.5
       pretty-format: 29.4.2
@@ -8300,7 +8301,7 @@ packages:
     resolution: {integrity: sha512-RtKWW0mbR3I4UdkOrW7552IFGLYQ5AF9YrzD0FnIOkDu0rAMlA5/Y1+r7lhCAP4nXSBTaE7ueeqj6IOwZpgoqw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      chalk: 4.1.0
+      chalk: 4.1.2
       graceful-fs: 4.2.10
       jest-haste-map: 29.4.2
       jest-pnp-resolver: 1.2.2_jest-resolve@29.4.2
@@ -8321,7 +8322,7 @@ packages:
       '@jest/transform': 29.4.2
       '@jest/types': 29.4.2
       '@types/node': 14.17.4
-      chalk: 4.1.0
+      chalk: 4.1.2
       emittery: 0.13.1
       graceful-fs: 4.2.10
       jest-docblock: 29.4.2
@@ -8352,7 +8353,7 @@ packages:
       '@jest/transform': 29.4.2
       '@jest/types': 29.4.2
       '@types/node': 14.17.4
-      chalk: 4.1.0
+      chalk: 4.1.2
       cjs-module-lexer: 1.2.2
       collect-v8-coverage: 1.0.1
       glob: 7.1.6
@@ -8387,7 +8388,7 @@ packages:
       '@types/babel__traverse': 7.0.12
       '@types/prettier': 2.7.2
       babel-preset-current-node-syntax: 1.0.1_@babel+core@7.20.2
-      chalk: 4.1.0
+      chalk: 4.1.2
       expect: 29.4.2
       graceful-fs: 4.2.10
       jest-diff: 29.4.2
@@ -8419,7 +8420,7 @@ packages:
     dependencies:
       '@jest/types': 26.3.0
       '@types/node': 14.17.4
-      chalk: 4.1.0
+      chalk: 4.1.2
       graceful-fs: 4.2.10
       is-ci: 2.0.0
       micromatch: 4.0.5
@@ -8442,7 +8443,7 @@ packages:
     dependencies:
       '@jest/types': 29.4.2
       camelcase: 6.3.0
-      chalk: 4.1.0
+      chalk: 4.1.2
       jest-get-type: 29.4.2
       leven: 3.1.0
       pretty-format: 29.4.2
@@ -8456,7 +8457,7 @@ packages:
       '@jest/types': 29.4.2
       '@types/node': 14.17.4
       ansi-escapes: 4.3.1
-      chalk: 4.1.0
+      chalk: 4.1.2
       emittery: 0.13.1
       jest-util: 29.4.2
       string-length: 4.0.1
@@ -10515,6 +10516,15 @@ packages:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
     engines: {node: '>=0.4.0'}
 
+  /promise-inflight/1.0.1:
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dev: true
+
   /promise-inflight/1.0.1_bluebird@3.7.2:
     resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
     peerDependencies:
@@ -10671,6 +10681,10 @@ packages:
   /q/1.5.1:
     resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
+    deprecated: |-
+      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
+      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
     dev: true
 
   /qs/6.5.2:
